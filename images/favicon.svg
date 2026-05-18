@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 82 82">
+  <circle cx="41" cy="41" r="39" fill="#f5f3ef" stroke="#3a6ea5" stroke-width="3"/>
+  <text x="24" y="51" text-anchor="middle" font-family="Georgia, serif" font-size="24" font-weight="500" fill="#3a6ea5">A</text>
+  <g stroke="#3a6ea5" stroke-width="2" stroke-linecap="round" fill="none">
+    <line x1="33.5" y1="30" x2="37.5" y2="30"/>
+    <line x1="33.5" y1="34" x2="37.5" y2="34"/>
+    <line x1="33" y1="38" x2="37" y2="38"/>
+    <line x1="33" y1="42" x2="37" y2="42"/>
+    <line x1="33" y1="46" x2="37" y2="46"/>
+    <line x1="33.5" y1="50" x2="37.5" y2="50"/>
+    <line x1="33.5" y1="54" x2="37.5" y2="54"/>
+  </g>
+  <text x="47" y="51" text-anchor="middle" font-family="Georgia, serif" font-size="24" font-weight="500" fill="#3a6ea5">P</text>
+  <text x="59" y="51" text-anchor="middle" font-family="Georgia, serif" font-size="24" font-weight="500" fill="#3a6ea5">T</text>
+</svg>
