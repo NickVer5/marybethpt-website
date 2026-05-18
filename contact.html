@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contact | Advanced Integrative Physical Therapy</title>
+<meta name="description" content="Get in touch with Mary Beth — call, email, or send a message. Located at 5920 Roswell Road, Suite D-101, Atlanta.">
+<link rel="stylesheet" href="css/style.css">
+<link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+</head>
+<body>
+
+<!-- ============ SHARED HEADER ============ -->
+<header class="site-header">
+  <div class="container">
+    <a href="index.html" class="logo" aria-label="Advanced Integrative Physical Therapy — Home">
+      <svg width="44" height="44" viewBox="0 0 82 82" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <circle cx="41" cy="41" r="39" fill="none" stroke="#3a6ea5" stroke-width="1.5"/>
+        <text x="24" y="49" text-anchor="middle" font-family="Spectral, serif" font-size="22" font-weight="500" fill="#3a6ea5" letter-spacing="0.03em">A</text>
+        <g stroke="#3a6ea5" stroke-width="1.5" stroke-linecap="round" fill="none">
+          <line x1="33.5" y1="30" x2="37.5" y2="30"/>
+          <line x1="33.5" y1="34" x2="37.5" y2="34"/>
+          <line x1="33" y1="38" x2="37" y2="38"/>
+          <line x1="33" y1="42" x2="37" y2="42"/>
+          <line x1="33" y1="46" x2="37" y2="46"/>
+          <line x1="33.5" y1="50" x2="37.5" y2="50"/>
+          <line x1="33.5" y1="54" x2="37.5" y2="54"/>
+        </g>
+        <text x="47" y="49" text-anchor="middle" font-family="Spectral, serif" font-size="22" font-weight="500" fill="#3a6ea5" letter-spacing="0.03em">P</text>
+        <text x="58" y="49" text-anchor="middle" font-family="Spectral, serif" font-size="22" font-weight="500" fill="#3a6ea5" letter-spacing="0.03em">T</text>
+      </svg>
+      <span class="logo-text">
+        Advanced Integrative<br>Physical Therapy
+        <span class="sub">Atlanta · PRC</span>
+      </span>
+    </a>
+    <button class="mobile-nav-toggle" aria-label="Toggle menu">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+    </button>
+    <nav class="site-nav">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="what-to-expect.html">What to Expect</a>
+      <a href="contact.html" class="current">Contact</a>
+      <a href="#" class="btn-book">Book</a>
+    </nav>
+  </div>
+</header>
+<!-- ============ END HEADER ============ -->
+
+<main>
+
+  <!-- PAGE HEADER -->
+  <section class="page-header">
+    <div class="container">
+      <span class="eyebrow">Contact</span>
+      <h1>Let's start a conversation.</h1>
+      <p class="lede">Reach out by phone, email, or the form below. Mary Beth or her team will respond personally — usually within one business day.</p>
+    </div>
+  </section>
+
+  <!-- CONTACT GRID -->
+  <section>
+    <div class="container">
+      <div class="two-col-narrow">
+
+        <!-- Left column: direct contact details -->
+        <div class="reveal">
+          <span class="eyebrow">Reach Out Directly</span>
+          <h2>The fastest ways to get in touch.</h2>
+          <hr class="rule">
+
+          <ul class="contact-list" style="margin-top: 30px;">
+            <li>
+              <span class="label">Tel</span>
+              <span class="sep"></span>
+              <span class="value"><a href="tel:9177411917">917.741.1917</a></span>
+            </li>
+            <li>
+              <span class="label">Email</span>
+              <span class="sep"></span>
+              <span class="value"><a href="mailto:marybeth@marybethpt.com">marybeth@marybethpt.com</a></span>
+            </li>
+            <li>
+              <span class="label">Clinic</span>
+              <span class="sep"></span>
+              <span class="value">5920 Roswell Road<br>Suite D-101<br>Atlanta, GA 30328</span>
+            </li>
+            <li>
+              <span class="label">Hours</span>
+              <span class="sep"></span>
+              <span class="value">By appointment</span>
+            </li>
+          </ul>
+
+          <div class="editor-note" style="margin-top: 36px;"><strong>Editor's note:</strong> Specific hours of operation should be added — Monday–Friday, 8am–6pm, or whatever applies.</div>
+        </div>
+
+        <!-- Right column: contact form -->
+        <div class="reveal">
+          <span class="eyebrow">Send a Message</span>
+          <h2>Use the form, if that's easier.</h2>
+          <hr class="rule">
+
+          <!-- Replace YOUR_FORMSPREE_ID with the actual ID from formspree.io -->
+          <form class="contact-form" action="https://formspree.io/f/YOUR_FORMSPREE_ID" method="POST" style="margin-top: 30px;">
+            <div>
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" required>
+            </div>
+            <div>
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" required>
+            </div>
+            <div>
+              <label for="phone">Phone (optional)</label>
+              <input type="tel" id="phone" name="phone">
+            </div>
+            <div>
+              <label for="reason">What brings you here?</label>
+              <select id="reason" name="reason">
+                <option value="new-patient">I'm a prospective new patient</option>
+                <option value="returning">I'm a returning patient</option>
+                <option value="referral">I'm a referring provider</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+            <div>
+              <label for="message">Message</label>
+              <textarea id="message" name="message" required placeholder="Briefly describe what you're dealing with, what you've tried, and what you're hoping to address."></textarea>
+            </div>
+            <button type="submit" class="btn-primary">Send Message</button>
+          </form>
+
+          <div class="form-success">
+            <p><strong>Thank you.</strong> Your message has been received. Mary Beth or her team will be in touch within one business day. If your situation is more urgent, please call directly at 917.741.1917.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- LOCATION / DIRECTIONS -->
+  <section class="section-warm">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="eyebrow">Visit</span>
+        <h2>Finding the clinic.</h2>
+        <hr class="rule rule-center">
+        <p>Located in the Sandy Springs medical corridor on Roswell Road, with on-site parking and easy access from GA-400. Just inside I-285.</p>
+      </div>
+
+      <!-- Map placeholder — replace with embedded Google Maps in production -->
+      <div style="background: var(--cream-soft); border: 1px solid var(--rule); padding: 80px 20px; text-align: center; max-width: 800px; margin: 0 auto;">
+        <p style="font-family: var(--serif); font-size: 1.1rem; color: var(--charcoal); margin-bottom: 1em;">5920 Roswell Road, Suite D-101<br>Atlanta, GA 30328</p>
+        <a href="https://maps.google.com/?q=5920+Roswell+Rd+Suite+D-101+Atlanta+GA+30328" target="_rel" rel="noopener" class="btn-secondary">Open in Google Maps</a>
+      </div>
+
+      <div class="editor-note" style="max-width: 800px; margin: 24px auto 0;"><strong>Editor's note:</strong> Replace placeholder above with an embedded Google Maps iframe before launch.</div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ============ SHARED FOOTER ============ -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="seal">
+          <svg viewBox="0 0 82 82" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <circle cx="41" cy="41" r="39" fill="none" stroke="#f5f3ef" stroke-width="1.2"/>
+            <text x="24" y="49" text-anchor="middle" font-family="Spectral, serif" font-size="22" font-weight="500" fill="#f5f3ef" letter-spacing="0.03em">A</text>
+            <g stroke="#f5f3ef" stroke-width="1.5" stroke-linecap="round" fill="none">
+              <line x1="33.5" y1="30" x2="37.5" y2="30"/>
+              <line x1="33.5" y1="34" x2="37.5" y2="34"/>
+              <line x1="33" y1="38" x2="37" y2="38"/>
+              <line x1="33" y1="42" x2="37" y2="42"/>
+              <line x1="33" y1="46" x2="37" y2="46"/>
+              <line x1="33.5" y1="50" x2="37.5" y2="50"/>
+              <line x1="33.5" y1="54" x2="37.5" y2="54"/>
+            </g>
+            <text x="47" y="49" text-anchor="middle" font-family="Spectral, serif" font-size="22" font-weight="500" fill="#f5f3ef" letter-spacing="0.03em">P</text>
+            <text x="58" y="49" text-anchor="middle" font-family="Spectral, serif" font-size="22" font-weight="500" fill="#f5f3ef" letter-spacing="0.03em">T</text>
+          </svg>
+        </div>
+        <p>Boutique physical therapy in Atlanta. Treating root causes through integrated, individualized care.</p>
+      </div>
+      <div>
+        <h4>Visit</h4>
+        <ul>
+          <li>5920 Roswell Road</li>
+          <li>Suite D-101</li>
+          <li>Atlanta, GA 30328</li>
+        </ul>
+      </div>
+      <div>
+        <h4>Connect</h4>
+        <ul>
+          <li><a href="tel:9177411917">917.741.1917</a></li>
+          <li><a href="mailto:marybeth@marybethpt.com">marybeth@marybethpt.com</a></li>
+          <li><a href="contact.html">Schedule a Visit</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div>© <span id="year"></span> Advanced Integrative Physical Therapy, LLC</div>
+      <div>Mary Beth Antolini Verlander, MPT, PRC</div>
+    </div>
+  </div>
+</footer>
+<!-- ============ END FOOTER ============ -->
+
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+<script src="js/main.js"></script>
+</body>
+</html>
