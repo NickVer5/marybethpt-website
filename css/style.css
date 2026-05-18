@@ -38,7 +38,10 @@
 
 * { box-sizing: border-box; margin: 0; padding: 0; }
 
-html { scroll-behavior: smooth; }
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 90px;
+}
 
 body {
   font-family: var(--sans);
@@ -130,7 +133,11 @@ section {
   padding: var(--section-pad) 0;
 }
 
+/* Avoid doubled padding when two content sections meet, but page-header
+   should still let the following section have full top padding so content
+   doesn't sit flush against the divider. */
 section + section { padding-top: 0; }
+.page-header + section { padding-top: var(--section-pad); }
 
 /* Header / Navigation ===================================================== */
 
@@ -722,7 +729,7 @@ section + section { padding-top: 0; }
 /* Page header (for non-home pages) ======================================== */
 
 .page-header {
-  padding: clamp(70px, 10vw, 120px) 0 clamp(40px, 5vw, 70px) 0;
+  padding: clamp(110px, 12vw, 140px) 0 clamp(50px, 5vw, 70px) 0;
   background: var(--cream-warm);
   border-bottom: 1px solid var(--rule);
 }
