@@ -800,18 +800,27 @@ section + section { padding-top: 0; }
 
 /* Reveal animations ======================================================= */
 
+/* Default: content is visible. JavaScript adds .js-reveal-active to enable
+   the hidden-until-scrolled behavior. If JS fails or is slow, content
+   still appears normally. */
 .reveal {
-  opacity: 0;
-  transform: translateY(20px);
+  opacity: 1;
+  transform: none;
   transition: opacity 0.8s ease, transform 0.8s ease;
 }
 
-.reveal.visible {
+.js-reveal-active .reveal {
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+.js-reveal-active .reveal.visible {
   opacity: 1;
   transform: translateY(0);
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .reveal { opacity: 1; transform: none; transition: none; }
+  .reveal,
+  .js-reveal-active .reveal { opacity: 1; transform: none; transition: none; }
   html { scroll-behavior: auto; }
 }
